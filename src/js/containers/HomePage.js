@@ -9,7 +9,7 @@ import AreaChart from './AreaChart';
 import Heading from 'grommet/components/Heading';
 import LinkNext from 'grommet/components/icons/base/LinkNext';
 
-import '../../scss/index.scss';
+//import '../../scss/index.scss';
 
 export default class HomePage extends Component {
   constructor() {
