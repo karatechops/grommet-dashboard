@@ -22,23 +22,23 @@ export default class AreaChart extends Component {
     return (
       <Box align="center" style={{width:'100%'}}>
         <Heading className="box-title" tag="h4" strong={true}>Growth in Internet Users</Heading>
-        <Chart vertical={false}>
-          <Base height="medium" width="large" />
-          <Layers>
-            <Area values={VALUES} colorIndex="graph-2" activeIndex={this.state.index} />
-            <Area values={VALUES_2} colorIndex="graph-3" activeIndex={this.state.index} />
-            <HotSpots count={VALUES.length}
-              activeIndex={this.state.index}
-              onActive={(index) => this.setState({
-                index: (undefined === index ? (VALUES.length - 1) : index)
-              })} />
-          </Layers>
-          <Axis ticks={true} count={10} labels={[
-            {"index": 9, "label": 2014},
-            {"index": 6, "label": 2010},
-            {"index": 0, "label": 2000}
-          ]} />
-        </Chart>
+          <Chart vertical={true} full={true}>
+            <Base height="medium" width="full" />
+            <Layers>
+              <Area values={VALUES} colorIndex="graph-2" activeIndex={this.state.index} />
+              <Area values={VALUES_2} colorIndex="graph-3" activeIndex={this.state.index} />
+              <HotSpots count={VALUES.length}
+                activeIndex={this.state.index}
+                onActive={(index) => this.setState({
+                  index: (undefined === index ? (VALUES.length - 1) : index)
+                })} />
+            </Layers>
+            <Axis ticks={true} count={10} labels={[
+              {"index": 9, "label": 2014},
+              {"index": 6, "label": 2010},
+              {"index": 0, "label": 2000}
+            ]} />
+          </Chart>
         <Box>
           <Heading tag="h5" strong={true}>Per 100 Users in {this.state.index + 2005}</Heading>
         </Box>

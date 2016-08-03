@@ -101,13 +101,15 @@
 
 .grommetux-chart {
   //min-width: 100%;
-  max-width: 100%;
+  //max-width: 100%;
   margin-bottom: 15px;
+  //flex-wrap: wrap;
 
   .grommetux-chart-base,
-  .grommetux-chart-layers {
+  .grommetux-chart-layers,
+  .grommetux-chart-axis {
     //min-width: 100%;
-    max-width: 100%;
+    //max-width: 100%;
   }
 }
 
