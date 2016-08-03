@@ -1,0 +1,61 @@
+.grommetux-meter__values .grommetux-meter__slice {
+  @include graph-stroke-color;
+  transition: stroke-width 0.2s;
+  stroke-width: 14px;
+  // Turn these off to animate whole container, this avoids
+  // stacked segments drawn seperately.
+  -webkit-animation: none;
+  animation: none;
+
+  &.grommetux-meter__slice--active {
+  	stroke-width: 18px;
+  }
+}
+
+.grommetux-meter__slice {
+	stroke-width: 10px;
+}
+
+.grommetux-meter__tracks {
+	display: none;
+}
+
+.grommetux-meter--active {
+	path:not(.grommetux-meter__slice--active) {
+		opacity: 0.5;
+		stroke-width: 8px;
+	}
+}
+
+.grommetux-color-index-graph-4-fade path {
+  stroke: rgba(97, 71, 103, 0.6);
+}
+
+.grommetux-color-index-graph-3-fade-75 path {
+  stroke: rgba(42, 210, 201, 0.75);
+}
+
+.grommetux-color-index-graph-3-fade-50 path {
+  stroke: rgba(42, 210, 201, 0.5);
+}
+
+.grommetux-color-index-graph-3-fade-25 path {
+  stroke: rgba(42, 210, 201, 0.25);
+}
+
+.grommetux-color-index-graph-3-fade-10 path {
+  stroke: rgba(42, 210, 201, 0.1);
+}
+
+.grommetux-chart-graph--area.grommetux-color-index-graph-3 {
+  fill: rgba(42, 210, 201, 1);
+}
+
+.grommetux-chart-graph--area.grommetux-color-index-graph-2 {
+  fill: rgba(253, 154, 105, 1);
+}
+
+#{$dark-background-context} {
+	.grommetux-meter__labels text { fill: #fff; }
+  .grommetux-meter__value-units { color: #fff; }
+}

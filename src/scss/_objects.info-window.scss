@@ -1,0 +1,16 @@
+.info-window {
+	font-family: $brand-font-family;
+	font-size: 14px;
+	font-weight: 600;
+	padding-top: 5px;
+	color: #000;
+
+	span {
+		display: block;
+	}
+
+	.info-window__value {
+		font-size: 48px;
+		padding: 10px 0;
+	}
+}

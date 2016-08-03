@@ -1,0 +1,81 @@
+.grommetux-box {
+  overflow: auto;
+}
+
+.col-row {
+  width: 100%;
+  height: auto;
+  padding-top: 24px;
+
+  @include media-query(lap-and-up) {
+    height: 50%;
+  }
+}
+
+.col-row > div:not(.start-box) {
+  border-right: none;
+  border-bottom: $border;
+  padding: 20px;
+
+  @include media-query(lap-and-up) {
+    border-bottom: none;
+    border-right: $border;
+    padding: 20px 20px 0;
+  }
+}
+
+.start-box {
+  border-right: none;
+  border-bottom: $border;
+  padding: 0 20px 20px;
+
+  @include media-query(lap-and-up) {
+    border-bottom: none;
+    border-right: $border;
+    padding: 20px;
+  }
+}
+
+.col-row div:last-child {
+  border: none;
+}
+
+.col__span-12 {
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  min-height: none;
+
+  @include media-query(lap-and-up) {
+    height: 50%;
+    min-height: 50%;
+  }
+}
+
+.col__span-50 {
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  min-height: none;
+
+  @include media-query(lap-and-up) {
+    width: 50%;
+    min-width: 50%;
+    height: 100%;
+    min-height: 100%;
+  }
+}
+
+.col__span-25 {
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  min-height: none;
+
+  @include media-query(lap-and-up) {
+    width: 25%;
+    min-width: 25%;
+    height: 100%;
+    min-height: 100%;
+  }
+}
