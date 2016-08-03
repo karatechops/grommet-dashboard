@@ -1,4 +1,4 @@
-# Grommet Universal Single Page Template
+# Grommet Infographic Dashboard Template
 
 This is the source code for a Grommet based universal single page. To run the website execute the following:
 
@@ -23,5 +23,5 @@ This is the source code for a Grommet based universal single page. To run the we
   4. Run the back-end server:
 
       ```
-      $ node server/server.js
+      $ npm start
       ```
