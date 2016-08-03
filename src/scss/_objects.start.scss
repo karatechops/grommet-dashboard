@@ -3,32 +3,28 @@
 	width: 100%;
 
 	a { 
+		font-size: 26px;
+		display: inline-block;
 	  color: $brand-color; 
 	  transition: opacity 0.2s linear;
 	  text-decoration: none;
 	  padding-left: 0;
 	  margin: 5px 0 15px;
-		display: flex;
-		align-content: center;
 		font-weight: 400;
-
-		@include media-query(lap-and-up) {
-			padding-left: 10px;
-	  	margin: 0;
-			display: inline-block;
-		}
 
 	  &:hover {
 	    color: $brand-color; 
 	    opacity: 0.8;
 	  }
 
+	  span { vertical-align: middle; }
+
 	  .grommetux-control-icon {
-	    padding-top: 0;
+	    //padding-top: 0;
 	    margin-right: 5px;
 
 	    @include media-query(lap-and-up) {
-				padding-top: 5px;
+				//padding-top: 5px;
 			}
 
 	    path {
@@ -39,7 +35,7 @@
 	}
 
 	.grommetux-heading {
-		max-width: 1110px;
+		max-width: 950px;
 	}
 
 	.col__span-50 {

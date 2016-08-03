@@ -41,8 +41,8 @@ export default class CircleMeter extends Component {
 
   render() {
     return (
-      <Box align="center">
-        <Heading tag="h4" strong={true}>World population using the Internet</Heading>
+      <Box align="center" style={{width:'100%'}}>
+        <Heading className="box-title" tag="h4" strong={true}>World population using the Internet</Heading>
         <Heading tag="h5">{SERIES[this.state.rangeValue].year}</Heading>
         <FormFields>
           <input type="range" id="slider" name="date-slider" min="0" max="2" onChange={this._onSlide} value={this.state.rangeValue} />

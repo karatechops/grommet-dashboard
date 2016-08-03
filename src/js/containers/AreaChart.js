@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import Chart,
-  { Layers, Base, Area, HotSpots }
+  { Axis, Layers, Base, Area, HotSpots }
   from 'grommet/components/chart/Chart';
 import Heading from 'grommet/components/Heading';
 import Box from 'grommet/components/Box';
@@ -20,9 +20,9 @@ export default class AreaChart extends Component {
 
   render() {
     return (
-      <Box style={{width:'100%'}}>
-        <Heading tag="h4" strong={true}>Growth in Internet Users</Heading>
-        <Chart vertical={true} full={true}>
+      <Box align="center" style={{width:'100%'}}>
+        <Heading className="box-title" tag="h4" strong={true}>Growth in Internet Users</Heading>
+        <Chart vertical={false}>
           <Base height="medium" width="large" />
           <Layers>
             <Area values={VALUES} colorIndex="graph-2" activeIndex={this.state.index} />
@@ -33,10 +33,16 @@ export default class AreaChart extends Component {
                 index: (undefined === index ? (VALUES.length - 1) : index)
               })} />
           </Layers>
-          <Heading tag="h5" strong={true}>Per 100 Users in 2005</Heading>
+          <Axis ticks={true} count={10} labels={[
+            {"index": 9, "label": 2014},
+            {"index": 6, "label": 2010},
+            {"index": 0, "label": 2000}
+          ]} />
         </Chart>
-
-        <Box align="center" justify="center" className="area-legend" 
+        <Box>
+          <Heading tag="h5" strong={true}>Per 100 Users in {this.state.index + 2005}</Heading>
+        </Box>
+        <Box align="center" justify="start" className="area-legend" 
           direction="row" wrap={true} style={{width:'100%'}}>
           <Box className="area-legend__list" justify="center" align="center" direction="column">
             <Heading tag="h1" strong={true}>{VALUES_2[this.state.index]}</Heading>

@@ -9,7 +9,7 @@ import AreaChart from './AreaChart';
 import Heading from 'grommet/components/Heading';
 import LinkNext from 'grommet/components/icons/base/LinkNext';
 
-//import '../../scss/index.scss';
+import '../../scss/index.scss';
 
 export default class HomePage extends Component {
   constructor() {
@@ -46,13 +46,13 @@ export default class HomePage extends Component {
       <Box className="infographic-start" direction="column">
         <Box justify="center" align="start" className="col__span-100">
           <Heading className="infographic-title" tag="h1" strong={true}>Worldwide Internet Usage</Heading>         
-          <Box>
+          <Box direction="column">
             <Heading tag="h3">
               Access to the internet has increased at an unprecedented rate over the past
               10 years. Creating today’s idea economy, where the speed of businesses is faster
               and more agile than ever.
-              <a href="#" className="cta"><LinkNext />Learn More</a>
             </Heading>
+            <Box><a href="#" className="cta"><span><LinkNext /></span>Learn More</a></Box>
           </Box>
         </Box>
 
@@ -72,14 +72,14 @@ export default class HomePage extends Component {
         </Box>
       </Box>
 
-        <Box className="col-row" direction="row">
-          <Box justify="start" align="center" className="col__span-25">
+        <Box className="col-row col-row__bottom" direction="row">
+          <Box className="meter-box col__span-25" justify="start" align="center">
             <CircleMeter />
           </Box>
-          <Box justify="start" align="center" className="col__span-25">
+          <Box className="area-box col__span-25" justify="start" align="center">
             <AreaChart />
           </Box>
-          <Box justify="start" align="center" className="col__span-50">
+          <Box className="map-box col__span-50" justify="start" align="center">
             <Map />
           </Box>
         </Box>

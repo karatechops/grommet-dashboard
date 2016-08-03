@@ -20,7 +20,7 @@
   min-height: none;
 
   @include media-query(lap-and-up) {
-    min-height: 785px;
+    min-height: 910px;
     overflow-y: auto;
   } 
 
@@ -28,7 +28,7 @@
     padding-top: 0;
 
     @include media-query(lap-and-up) {
-      padding-bottom: 24px;
+      //padding-bottom: 24px;
     }
   }
 }
@@ -65,9 +65,10 @@
 
   h3 {
     line-height: 1.5rem;
+    font-weight: 400;
 
     @include media-query(lap-and-up) {
-      line-height: 1rem;
+      line-height: 1.4rem;
     }
   }
 
@@ -99,14 +100,22 @@
 }
 
 .grommetux-chart {
-  min-width: 100%;
+  //min-width: 100%;
   max-width: 100%;
+  margin-bottom: 15px;
 
-  .grommetux-chart-base { min-width: 100%; max-width: 100%; }
-  .grommetux-chart-layers { min-width: 100%; max-width: 100%; }
+  .grommetux-chart-base,
+  .grommetux-chart-layers {
+    //min-width: 100%;
+    max-width: 100%;
+  }
 }
 
 .area-legend {
+  @media(min-width: 1645px) {
+    justify-content: center;
+  }
+
   h1,
   ol {
     padding: 0;
@@ -115,7 +124,8 @@
 
   .area-legend__list {
     flex-direction: row-reverse;
-    
+    align-self: flex-start;
+
     @media(min-width: 1540px) {
       flex-direction: column;
     }
