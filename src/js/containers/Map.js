@@ -98,7 +98,7 @@ export default class Map extends Component {
 
   render() {
     return (
-      <div style={{width:'100%', height:'100%'}}>
+      <div className="infographic-map-container" style={{width:'100%', height:'100%'}}>
         <Heading tag="h4" strong={true}>Individuals Using the Internet</Heading>
         <div className="infographic-map" ref="map" style={{backgroundColor:'#425563'}}></div>
         <Box align="center" justify="center">

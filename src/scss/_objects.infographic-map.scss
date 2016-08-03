@@ -1,3 +1,12 @@
+// This fixes a map display bug on iOS Safari.
+.infographic-map-container {
+  min-height: 300px;
+
+  @include media-query(lap-and-up) {
+    min-height: auto;
+  }
+}
+
 .infographic-map {
 	width: 100%;
 	height: 80%;
