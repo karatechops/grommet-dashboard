@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import Chart,
-  { Axis, Layers, Base, Area, HotSpots }
+  { Layers, Base, Area, HotSpots }
   from 'grommet/components/chart/Chart';
 import Heading from 'grommet/components/Heading';
 import Box from 'grommet/components/Box';
