@@ -15,7 +15,7 @@
 @import 'layout';
 
 body {
-  background: nth($brand-colors-neutral, 1);
+  background: nth($brand-neutral-colors, 1);
 }
 
 .dashboard {
