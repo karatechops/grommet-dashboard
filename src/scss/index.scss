@@ -14,7 +14,10 @@
 @import 'objects.info-window';
 @import 'layout';
 
-body {
+// With some combinations of layout the overflow
+// has a white background.
+body,
+html {
   background: nth($brand-neutral-colors, 1);
 }
 
