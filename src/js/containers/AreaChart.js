@@ -33,11 +33,6 @@ export default class AreaChart extends Component {
                   index: (undefined === index ? (VALUES.length - 1) : index)
                 })} />
             </Layers>
-            <Axis ticks={true} count={10} labels={[
-              {"index": 9, "label": 2014},
-              {"index": 6, "label": 2010},
-              {"index": 0, "label": 2000}
-            ]} />
           </Chart>
         <Box>
           <Heading tag="h5" strong={true}>Per 100 Users in {this.state.index + 2005}</Heading>
