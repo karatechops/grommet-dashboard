@@ -38,7 +38,7 @@ export default class HomePage extends Component {
 
   render() {
     let statImg = (this.state.layout !== 'small')
-      ? <img src="../img/people.svg" />
+      ? <img style={{maxWidth:'752px'}} src="../img/people.svg" />
       : <img src="../img/people-mobile.svg" />;
     return (
       <Box className="dashboard" justify="center" align="center" pad="medium" full={true} colorIndex="neutral-1">
@@ -56,11 +56,9 @@ export default class HomePage extends Component {
           </Box>
         </Box>
 
-        <Box className="infographic-stat" responsive={false} direction="row" style={{paddingTop:'20px'}}>
-          <Box justify="center" align="center" style={{height:'auto'}} className="col__span-50">
+        <Box justify="start" className="infographic-stat col__span-100" responsive={false} direction="row" style={{padding:'20px 0'}}>
             {statImg}
-          </Box>
-          <Box justify="center" align="start" className="col__span-50">
+            <Box direction="column">
             <Heading tag="h4" strong={true} margin="none">Nearly</Heading>
             <Heading tag="h1" strong={true}>
               50
@@ -68,7 +66,7 @@ export default class HomePage extends Component {
               <span className="support"> (or 3.2B people)</span>
             </Heading>
             <Heading tag="h3">of the world's population have access to the internet.</Heading>
-          </Box>
+            </Box>
         </Box>
       </Box>
 

@@ -5,7 +5,7 @@
 	a { 
 		font-size: 26px;
 		display: inline-block;
-	  color: $brand-color; 
+	  color: $text-color; 
 	  transition: opacity 0.2s linear;
 	  text-decoration: none;
 	  padding-left: 0;
@@ -13,19 +13,14 @@
 		font-weight: 400;
 
 	  &:hover {
-	    color: $brand-color; 
+	    color: $text-color; 
 	    opacity: 0.8;
 	  }
 
 	  span { vertical-align: middle; }
 
 	  .grommetux-control-icon {
-	    //padding-top: 0;
 	    margin-right: 5px;
-
-	    @include media-query(lap-and-up) {
-				//padding-top: 5px;
-			}
 
 	    path {
 	      stroke: $brand-color;
@@ -65,11 +60,11 @@
 
 #{$dark-background-context} {
   .infographic-start a { 
-    color: $brand-color; 
+    color: $inverse-color; 
     text-decoration: none;
 
     &:hover {
-      color: $brand-color; 
+      color: $inverse-color; 
     }
 
     .grommetux-control-icon path {
