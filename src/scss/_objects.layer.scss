@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
 		background-color: nth($brand-accent-colors, 1);
-		color: #fff;
+		color: nth($brand-grey-colors, 1);
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -31,7 +31,7 @@
     }
 
     .grommetux-layer__closer {
-    	svg { stroke: #fff; }
+    	svg { stroke: nth($brand-grey-colors, 1); }
     }
 
     img {
@@ -59,8 +59,8 @@
       }
 
       .grommetux-anchor__icon svg {
-        fill: #ffffff;
-        stroke: #ffffff;
+        fill: nth($brand-grey-colors, 1);
+        stroke: nth($brand-grey-colors, 1);
       }
     }
   }
