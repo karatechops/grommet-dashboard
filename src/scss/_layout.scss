@@ -73,6 +73,9 @@
 // Layout struggles with laptop screens so we
 // break to mobile sooner.
 .col-row__bottom {
+  min-height: 50%;
+  height: auto;
+  
   @media(max-width: 950px) and (min-width: 45em) {
     flex-direction: column;
 
@@ -81,6 +84,7 @@
       width: 100%;
       border-right: none;
       border-bottom: $border;
+      padding-bottom: 24px;
     }
 
     .area-box {

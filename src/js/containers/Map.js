@@ -10,12 +10,14 @@ import { mapSeries } from '../constants';
 export default class Map extends Component {
   constructor() {
     super();
+
+    this._onClick = this._onClick.bind(this);
   }
 
   componentDidMount() {
   }
 
-  onClick() {
+  _onClick() {
 
   }
 
@@ -31,11 +33,11 @@ export default class Map extends Component {
           <Legend series={[
             {
               "label": "0",
-              "colorIndex": "graph-3-fade-10"
+              "colorIndex": "graph-3-fade-20"
             },
             {
               "label": "1-25",
-              "colorIndex": "graph-3-fade-25"
+              "colorIndex": "graph-3-fade-50"
             },
             {
               "label": "26-50",

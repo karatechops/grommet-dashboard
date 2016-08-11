@@ -39,6 +39,12 @@ html {
       //padding-bottom: 24px;
     }
   }
+
+  @media(max-width: 950px) and (min-width: 45em) {
+    min-height: auto;
+    max-height: none;
+    height: auto;
+  }
 }
 
 .infographic-stat {
